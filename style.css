@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    color: #3f3f3f;
+    background: #3f3f3f;
+}
+
+.container {
+    max-width: 390;
+}
+
+
+.item {
+	text-align: center;
+}
+
+.img_btn {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.img_btn_img {
+    vertical-align: middle;
+    width: 100;
+}

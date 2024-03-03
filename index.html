@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Кликни гемы</title>
+        <style>
+            .flash-message {
+                position: relative;
+            }
+    
+            .flash-message::after {
+                content: "+1";
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding: 5px 10px;
+                background-color: #008CBA;
+                color: white;
+                opacity: 0;
+                transition: opacity 0.3s ease-in-out;
+            }
+    
+            .flash-message.visible::after {
+                opacity: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <div class="item">
+                <button class="img_btn" id="btn_click">
+                    <img src="gems_px_fon.png" alt="" class="img_btn_img">
+                </button>
+            </div>
+
+        </div>
+
+
+        <script src="https://telegram.org/js/telegram-web-app.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
